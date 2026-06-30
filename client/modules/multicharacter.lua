@@ -171,7 +171,7 @@ function Multicharacter:SetupUI(characters, slots)
     if not Character then
         self.canRelog = false
 
-        exports.krs_hud:HideHud()
+        -- exports.krs_hud:HideHud()
         
         ESX.SpawnPlayer(Config.Default, self.spawnCoords, function()
             DoScreenFadeIn(400)
@@ -308,7 +308,7 @@ function Multicharacter:PlayerLoaded(playerData, isNew, skin)
 
         PlayWakeupAnimation()
 
-        exports.krs_hud:ShowHud()   
+        -- exports.krs_hud:ShowHud()   
 
         TriggerServerEvent("esx:onPlayerSpawn")
         TriggerEvent("esx:onPlayerSpawn")
