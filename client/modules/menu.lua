@@ -44,7 +44,7 @@ function Menu:InitCharacter()
     end
     Wait(500)
 
-    exports.krs_hud:HideHud()  
+    -- exports.krs_hud:HideHud()  
 
     SendNUIMessage({
         action = "ToggleMulticharacter",
